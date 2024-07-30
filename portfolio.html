@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#" onclick="showContent('home')">HOME</a></li>
+            <li><a href="#" onclick="showContent('about')">ABOUT ME</a></li>
+            <li><a href="#" onclick="showContent('projects')">PROJECTS</a></li>
+            <!-- <li><a href="#" onclick="showContent('ach')">ACHIEVEMENTS</a></li> -->
+            <li><a href="#" onclick="showContent('contact')">CONTACT ME</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left"></div>
+
+        <div class="right">
+            <div class="tab-contents active-tab home1" id="home">
+                <h1>Hi, I am Uday Kumar Mittapalli.</h1>
+                <p>Currently studying B.tech(ECE) 4th year.</p>
+            </div>
+            <div class="tab-contents about1" id="about">
+                <section style="margin-top: 20px;">
+                    <h2>Education</h2>
+                    <p>B.Tech(ECE) - 7.91 CGPA from CMR College of Engineering and Technology</p>
+                    <p>Intermediate - 95.8% from Impulse Junior College</p>
+                    <p>10th SSC - 9.5 CGPA from Ekashila Techno School</p>
+
+                </section>
+                <section>
+                    <h2>Technical Skills</h2>
+                    <p>Programming Skills - C,Python</p>
+                    <p>Web developement - HTML,CSS</p>
+                    <p>Database - My sql</p>
+                    <p>Tools- Power Bi,MS office,Github</p>
+                </section>
+                <section>
+                    <h2>Soft Skills</h2>
+                    <ol type="1">
+                        <li>
+                            Adaptable
+                        </li>
+                        <li>
+                            Teamwork
+                        </li>
+                        <li>
+                            Problem-solving
+                        </li>
+                        <li>
+                            Consistent
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Hobbies</h2>
+                    <ol type="1">
+                        <li>
+                            Watching Movies & WebSeries
+                        </li>
+                        <li>
+                            Playing Cricket
+                        </li>
+                        <li>
+                            Travelling and Visiting new places
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Personal Details</h2>
+                    <p>D.O.B - 20/11/2003</p>
+                    <p>Father's name - M.Venkateshwalu</p>
+                    <p>Mother's name - M.Malleswari</p>
+                    <p>Addres - Karakagudem,Bhadradri kothagudem,Telangana</p>
+                </section>
+            </div>
+            <div class="tab-contents about1" id="projects">
+                <h2>1.Gym website</h2>
+                <a href="https://github.com/UdayKumarTech/gym-website.git">Gym website</a>
+                <p>-Designed and developed a user-friendly, responsive website for a fitness center using HTML and CSS. <br>
+                   -The design includes a form for collecting user information, ensuring a seamless and pleasant user experience across different devices.                </p>
+                <div>
+                    <h2>2.Calculator</h2>
+                    <a href="https://github.com/UdayKumarTech/calculator.git">Calculator</a>
+                    <p>-Developed a user-friendly calculator application using HTML, CSS, and JavaScript. <br>
+                       -It features a clean and intuitive interface, responsive design for compatibility across devices, and efficient error handling to ensure a smooth user experience.</p>
+                </div>
+            </div>
+        
+            <div class="tab-contents about1" id="contact">
+                <div style="display: flex; gap: 1.5rem; align-items: center;">
+                    <i class="fa-solid fa-phone" style="font-size: 23px;"></i>
+                    <h3>Mobile:-</h3>
+                    <p>+919573378303</p>
+                </div>
+                <div style="display: flex; gap: 1.5rem; align-items: center;">
+                    <i class="fa-solid fa-envelope" style="font-size: 23px;"></i>
+                    <h3>Email:-</h3>
+                    <p>udaymittapalli4@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/uday-mittapalli-74b581227" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/UdayKumarTech" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <footer>
+        <div class="copy">
+            <p> Copyright &copy; Udaykumar's Portfolio.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(tabName) {
+            var contents = document.querySelectorAll('.tab-contents');
+            contents.forEach(function (content) {
+                content.style.display = 'none';
+            });
+            document.getElementById(tabName).style.display = 'block';
+
+        }
+    </script>
+</body>
+
+
+</html>
